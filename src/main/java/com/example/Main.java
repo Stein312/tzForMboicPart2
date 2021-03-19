@@ -14,7 +14,6 @@
  * limitations under the License.
  */
 
-/*
 package com.example;
 
 import com.zaxxer.hikari.HikariConfig;
@@ -42,14 +41,14 @@ public class Main {
   @Value("${spring.datasource.url}")
   private String dbUrl;
 
-  @Autowired
-  private DataSource dataSource;
+  /*@Autowired
+  private DataSource dataSource;*/
 
   public static void main(String[] args) throws Exception {
     SpringApplication.run(Main.class, args);
   }
 
-  @RequestMapping("/")
+  /*@RequestMapping("/")
   String index() {
     return "index";
   }
@@ -84,7 +83,7 @@ public class Main {
       config.setJdbcUrl(dbUrl);
       return new HikariDataSource(config);
     }
-  }
+  }*/
 
 }
-*/
+
